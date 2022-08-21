@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/register"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username:    Trivia"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/register"
+
+android:id="@+id/Edit1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Edit1"
+        android:text="Email:"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+android:id="@+id/Edit2"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Edit2"
+        android:text="Password: "
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+<ImageView
+    android:layout_marginBottom="30dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/Popugay"
+
+    />
+
+
+<ImageView
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:background="@drawable/ic_baseline_arrow_back_24"
+
+    />
+
+    <Button
+        android:text="NEXT"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
